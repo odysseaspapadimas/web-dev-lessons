@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #1d1d1d;
+
+  margin: 0 auto; /* Center the container */
+  max-width: 960px; /* Set maximum width of the container */
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:not(.current):hover {
+  color: #adadad;
+}
+
+.current {
+  color: rgb(50, 156, 255);
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+
+  height: calc(100vh - 76px)
+}
